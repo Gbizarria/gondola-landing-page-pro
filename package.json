@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Gbizarria.github.io/gondola-landing-page-pro",
+  "homepage": "https://gbizarria.github.io/gondola-landing-page-pro",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
