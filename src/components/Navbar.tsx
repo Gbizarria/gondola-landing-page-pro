@@ -31,41 +31,41 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-primary shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="text-xl font-bold text-primary">GONDOLAS<span className="text-secondary">PRO</span></span>
+          <span className="text-xl font-bold text-white">GONDOLAS<span className="text-secondary">PRO</span></span>
         </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           <button 
             onClick={() => scrollToSection('home')}
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-white hover:text-secondary transition-colors"
           >
             Início
           </button>
           <button 
             onClick={() => scrollToSection('produtos')}
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-white hover:text-secondary transition-colors"
           >
             Produtos
           </button>
           <button 
             onClick={() => scrollToSection('beneficios')}
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-white hover:text-secondary transition-colors"
           >
             Benefícios
           </button>
           <button 
             onClick={() => scrollToSection('clientes')}
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-white hover:text-secondary transition-colors"
           >
             Clientes
           </button>
           <button 
             onClick={() => scrollToSection('sobre')}
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-white hover:text-secondary transition-colors"
           >
             Sobre
           </button>
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Navigation Toggle */}
         <button 
-          className="md:hidden text-gray-700"
+          className="md:hidden text-white"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -89,35 +89,35 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white w-full shadow-lg animate-fade-in">
+        <div className="md:hidden bg-primary w-full shadow-lg animate-fade-in">
           <div className="container px-4 py-4 flex flex-col space-y-4">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-gray-700 hover:text-primary py-2 transition-colors"
+              className="text-white hover:text-secondary py-2 transition-colors"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('produtos')}
-              className="text-gray-700 hover:text-primary py-2 transition-colors"
+              className="text-white hover:text-secondary py-2 transition-colors"
             >
               Produtos
             </button>
             <button 
               onClick={() => scrollToSection('beneficios')}
-              className="text-gray-700 hover:text-primary py-2 transition-colors"
+              className="text-white hover:text-secondary py-2 transition-colors"
             >
               Benefícios
             </button>
             <button 
               onClick={() => scrollToSection('clientes')}
-              className="text-gray-700 hover:text-primary py-2 transition-colors"
+              className="text-white hover:text-secondary py-2 transition-colors"
             >
               Clientes
             </button>
             <button 
               onClick={() => scrollToSection('sobre')}
-              className="text-gray-700 hover:text-primary py-2 transition-colors"
+              className="text-white hover:text-secondary py-2 transition-colors"
             >
               Sobre
             </button>
