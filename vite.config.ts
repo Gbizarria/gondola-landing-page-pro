@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/gondola-landing-page-pro',
+  base: '/gondola-landing-page-pro/',
 }));
