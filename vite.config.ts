@@ -21,5 +21,5 @@ export default defineConfig(({ mode }) => ({
     },
     
   },
-   base: '/gondola-landing-page-pro',
+   base: '/gondola-landing-page-pro/',
 }));
