@@ -1,4 +1,5 @@
 {
+  "homepage": "https://gbizarria.github.io/gondola-landing-page-pro",
   "name": "gondola-landing-page-pro",
   "private": true,
   "version": "0.0.0",
@@ -8,8 +9,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
-   
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
